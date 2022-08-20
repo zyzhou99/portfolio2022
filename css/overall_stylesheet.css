@@ -1,0 +1,81 @@
+header{
+    text-align: center;
+}
+
+body{
+    background: whitesmoke;
+    background-size: cover;
+    margin: 0;
+}
+
+nav{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.work{
+    position: fixed;
+    bottom: 9%;
+    left: 47%;
+    cursor: pointer;
+}
+
+.playground{
+    position: fixed;
+    top: 45%;
+    left: 4%;
+    cursor: pointer;
+}
+
+.about{
+    position: fixed;
+    top: 45%;
+    right: 4%;
+    
+}
+
+h1{
+    font-size: 3em;
+    color: black;
+    margin-top: -0.1em;
+    margin-bottom: -0.1em;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+    font-size: 1.5em;
+}
+
+p{
+    color: black;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.speaker{
+    width: 10%;
+    margin-left: 0.8em;
+    cursor: pointer;
+}
+
+.introtext{
+    margin-left: 3em;
+}

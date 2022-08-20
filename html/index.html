@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/overall_stylesheet.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <title>Ziyan Zhou Portfolio</title>
+</head>
+<body>
+
+    <section class="intro">
+        <nav>
+            <p><a class="work">UX DESIGN</a></p>
+            <p><a href="/html/playground.html" class="playground">PLAYGROUND</a></p>
+            <p><a href="/html/about.html" class="about">ABOUT ME</a></p>
+        </nav>
+
+        <div class="first">
+            <figure class="profile">
+                <div class="hair"></div>
+                <div class="head"></div>
+                <div class="neck"></div>
+                <div class="bangsleft"></div>
+                <div class="bangsright"></div>
+                <div class="bangsmiddle"></div>
+                <div class="bangshide"></div>
+                <div class="shirt"></div>
+                <div class="earleft"></div>
+                <div class="earright"></div>
+                <div class="sideleft"></div>
+                <div class="sidelefthide"></div>
+                <div class="eyebrowsleft eye"></div>
+                <div class="browshideleft eye"></div>
+                <div class="eyebrowsright eye"></div>
+                <div class="browshideright eye"></div>
+                <div class="eyeleft eye" id="eye1"></div>
+                <div class="eyeright eye" id="eye2"></div>
+                <div class="eyehlleft eye" id="eyehl1"></div>
+                <div class="eyehlright eye" id="eyehl2"></div>
+                <div class="nose1 face"></div>
+                <div class="nose2"></div>
+                <div class="cheekleft face"></div> 
+                <div class="cheekright face"></div>
+                <div class="mouth1 face"></div>
+                <div class="mouth2 face"></div>
+                <div class="tongue1"></div>
+                <div class="tongue2"></div>
+                <div class="neck2"></div>
+            </figure>
+
+            <div class="introtext">
+                <h3>Hi there, </h3>
+                <div class="name">
+                    <h1>I'm Ziyan Zhou</h1>
+                    <img src="../image/speaker2.png" alt="speaker icon" class="speaker">
+                </div>
+                <h2>A <span>UX Designer</span> and <span>Front-End Developer</span> <br> who design for <span>People</span></h2>
+                <p>I like </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyesMove);
+        document.querySelector('body').addEventListener('mousemove', faceMove);
+        function eyesMove(){
+            var eyes=document.getElementsByClassName('eye');
+            var x = event.clientX * 100 / window.innerWidth / 18 + "%";
+            var y = event.clientY * 100 / window.innerHeight / 5 + "%";
+            for(var i=0; i<8; i++){
+                eyes[i].style.left = x;
+                eyes[i].style.top = y;
+                eyes[i].style.transform = "translate(-"+x+", "+y+")";
+            }
+        }
+
+        function faceMove(){
+            var faces=document.getElementsByClassName('face');
+            var x = event.clientX * 100 / window.innerWidth / 30 + "%";
+            var y = event.clientY * 100 / window.innerHeight / 10 + "%";
+            for(var i=0; i<8; i++){
+                faces[i].style.left = x;
+                faces[i].style.top = y;
+                faces[i].style.transform = "translate(-"+x+", "+y+")";
+            }
+        }
+
+        document.querySelector('.profile').addEventListener('mouseover', smile);
+        document.querySelector('.profile').addEventListener('mouseout', changeBack);
+        function smile(){
+            //document.getElementById('eye1').classList.remove('eyeleft');
+            document.getElementById('eye1').classList.add('smileleft');
+            document.getElementById('eyehl1').classList.add('smilelefthide');
+            document.getElementById('eye2').classList.add('smileright');
+            document.getElementById('eyehl2').classList.add('smilerighthide');
+            document.querySelector('.nose1').style.marginTop = -46 + "px";
+        }
+
+        function changeBack(){
+            document.getElementById('eye1').classList.remove('smileleft');
+            document.getElementById('eyehl1').classList.remove('smilelefthide');
+            document.getElementById('eye2').classList.remove('smileright');
+            document.getElementById('eyehl2').classList.remove('smilerighthide');
+            document.querySelector('.nose1').style.marginTop = -6 + "px";
+        }
+    </script>
+
+    <section class="work">
+        <div class="locoRoco">
+            <img>
+            <p></p>
+        </div>
+
+        <div class="fantasyCity">
+            <p></p>
+        </div>
+
+        <div class="popMeal">
+            <p></p>
+        </div>
+
+        <div class="autoCatFeeder">
+            <p></p>
+        </div>
+
+        <div class="speculativeAmazon">
+            <p></p>
+        </div>
+    </section>
+</body>
+</html>
