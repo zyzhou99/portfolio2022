@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Dosis:wght@200;300;400;500;600&family=Exo+2:wght@200;300;400&family=Hammersmith+One&family=Julius+Sans+One&family=Nanum+Pen+Script&family=Outfit:wght@100;200;300;400;500;700&family=Play:wght@400;700&family=Silkscreen&family=Titillium+Web:wght@300;400;600&display=swap');
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Outfit', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Silkscreen', cursive;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Exo 2', sans-serif;
+*/
+
 header{
     text-align: center;
 }
@@ -10,28 +25,30 @@ body{
 
 nav{
     font-size: 1.5em;
-    cursor: pointer;
+    font-family: 'Play', sans-serif;
 }
 
 .work{
-    position: fixed;
+    position: absolute;
     bottom: 9%;
-    left: 47%;
-    cursor: pointer;
+    left: 46%;
+    z-index: 10;
 }
 
 .playground{
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 4%;
     cursor: pointer;
+    z-index: 10;
 }
 
 .about{
-    position: fixed;
+    cursor: pointer;
+    position: absolute;
     top: 45%;
     right: 4%;
-    
+    z-index: 10;
 }
 
 h1{
@@ -48,6 +65,7 @@ h2{
 h3{
     color: black;
     font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
 }
 
 p{
@@ -65,9 +83,23 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: black;
+}
+
+a:hover{
+    background-color: rgb(255, 226, 63);
+    color: blue;
+}
+
 .name{
     display: flex;
     align-items: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.brief{
+    font-family: 'Exo 2', sans-serif;
 }
 
 .speaker{
@@ -78,4 +110,51 @@ a{
 
 .introtext{
     margin-left: 3em;
+    margin-top: 1em;
+}
+
+.works{
+    display: block;
+    margin-top: 16em;
+    padding-top: 2em;
+    margin-bottom: 5em;
+}
+
+.works div{
+    margin-top: 2em;
+}
+
+.locoRoco{
+    background-color:rgb(255, 226, 63);
+    width: 60%;
+    height: 25vh;
+    margin: auto;
+}
+
+.fantasyCity{
+    background-color:rgb(255, 226, 63);
+    width: 60%;
+    height: 25vh;
+    margin: auto;
+}
+
+.popMeal{
+    background-color:rgb(255, 226, 63);
+    width: 60%;
+    height: 25vh;
+    margin: auto;
+}
+
+.speculativeAmazon{
+    background-color:rgb(255, 226, 63);
+    width: 60%;
+    height: 25vh;
+    margin: auto;
+}
+
+.yuMiao{
+    background-color:rgb(255, 226, 63);
+    width: 60%;
+    height: 25vh;
+    margin: auto;
 }

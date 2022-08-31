@@ -6,6 +6,13 @@
     transform: scale(0.9);
 }
 
+.backcircle{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: orange;
+}
+
 .head{
     width: 180px;
     height: 220px;
@@ -13,6 +20,7 @@
     border-radius: 45%;
     position: relative;
     z-index: 2;
+    margin-top: -100px;
 }
 
 .neck{
@@ -27,7 +35,7 @@
 }
 
 .hair{
-    background: rgb(30, 30, 30);
+    background: rgb(38, 33, 33);
     width: 260px;
     height: 355px;
     margin-left: -40px;
@@ -365,4 +373,15 @@
     margin-left: 110px;
     margin-top: -43px;
     border-radius: 100%;
+}
+
+.supriseleft{
+    border-radius: 0%;
+    margin-left: 28px;
+    transform: rotate(20deg);
+}
+
+.supriseright{
+    border-radius: 0%;
+    transform: rotate(45deg);
 }

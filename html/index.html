@@ -12,9 +12,9 @@
 
     <section class="intro">
         <nav>
-            <p><a class="work">UX DESIGN</a></p>
-            <p><a href="/html/playground.html" class="playground">PLAYGROUND</a></p>
-            <p><a href="/html/about.html" class="about">ABOUT ME</a></p>
+            <p class="work"><a href='#test' id="uxDesign">UX DESIGN ↓</a></p>
+            <p class="playground"><a href="playground.html" id="otherWork">PLAYGROUND</a></p>
+            <p class="about"><a href="about.html" id="aboutme">ABOUT ME</a></p>
         </nav>
 
         <div class="first">
@@ -56,8 +56,10 @@
                     <h1>I'm Ziyan Zhou</h1>
                     <img src="../image/speaker2.png" alt="speaker icon" class="speaker">
                 </div>
-                <h2>A <span>UX Designer</span> and <span>Front-End Developer</span> <br> who design for <span>People</span></h2>
-                <p>I like </p>
+                <h2 class="brief">
+                    A <span>UX Designer</span> and <span>Front-End Developer</span> <br>
+                </h2>
+                <p></p>
             </div>
         </div>
     </section>
@@ -87,8 +89,14 @@
             }
         }
 
-        document.querySelector('.profile').addEventListener('mouseover', smile);
-        document.querySelector('.profile').addEventListener('mouseout', changeBack);
+        //document.querySelector('.profile').addEventListener('mouseover', smile);
+        //document.querySelector('.profile').addEventListener('mouseout', changeBack);
+        document.getElementById('aboutme').addEventListener('mouseover', smile);
+        document.getElementById('aboutme').addEventListener('mouseout', changeBack);
+        document.getElementById('uxDesign').addEventListener('mouseover', smile);
+        document.getElementById('uxDesign').addEventListener('mouseout', changeBack);
+        document.getElementById('otherWork').addEventListener('mouseover', smile);
+        document.getElementById('otherWork').addEventListener('mouseout', changeBack);
         function smile(){
             //document.getElementById('eye1').classList.remove('eyeleft');
             document.getElementById('eye1').classList.add('smileleft');
@@ -105,12 +113,13 @@
             document.getElementById('eyehl2').classList.remove('smilerighthide');
             document.querySelector('.nose1').style.marginTop = -6 + "px";
         }
+
     </script>
 
-    <section class="work">
+    <section class="works" id="test">
         <div class="locoRoco">
-            <img>
-            <p></p>
+            
+            <p>sdfjhasdjflkasg asl</p>
         </div>
 
         <div class="fantasyCity">
@@ -121,11 +130,11 @@
             <p></p>
         </div>
 
-        <div class="autoCatFeeder">
+        <div class="speculativeAmazon">
             <p></p>
         </div>
 
-        <div class="speculativeAmazon">
+        <div class="yuMiao">
             <p></p>
         </div>
     </section>
