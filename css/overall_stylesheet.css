@@ -87,6 +87,14 @@ a{
     border-radius: 10px;
 }
 
+.work a{
+    padding: 20px;
+}
+
+.work a:hover{
+    background-color: rgb(17, 17, 17);
+}
+
 a:visited{
     color: whitesmoke;
 }
