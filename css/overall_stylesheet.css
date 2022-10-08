@@ -98,12 +98,12 @@ a:hover{
 
 .work a{
     color:rgb(255, 226, 63);
-    background-color: black;
+    background-color: rgb(17, 17, 17);
 }
 
 .work a:hover{
     color:rgb(255, 226, 63);
-    background-color: black;
+    background-color: rgb(17, 17, 17);
 }
 
 .name{
