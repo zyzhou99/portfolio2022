@@ -1,0 +1,45 @@
+body{
+    background: rgb(12, 12, 12);
+    background-size: cover;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3em;
+    color: whitesmoke;
+    margin-top: -0.1em;
+    margin-bottom: -0.1em;
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 1.55em;
+    font-weight: 300;
+    font-family: 'Play', sans-serif;
+}
+
+h3{
+    font-family: 'Play', sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: 1.35em;
+}
+
+p{
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:visited{
+    color: #f5f5f5;
+}

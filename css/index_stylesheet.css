@@ -87,7 +87,7 @@ a:visited{
     color: #f5f5f5;
 }
 
-a:hover{
+nav a:hover{
     color:black;
     background-color: #ffe23f;
 }
@@ -140,8 +140,17 @@ a:hover{
     width: 100%;
     grid-template-columns: 0.75fr 2fr 0.5fr 2fr 0.75fr;
     grid-template-rows: 1fr 0.75fr 1fr;
-    margin-top: 400px;
+    margin-top: 350px;
     margin-bottom: 90px;
+}
+
+.container a{
+    padding: 0px;
+    border-radius: 30px;
+}
+
+.container a:hover{
+    width: 75.6%;
 }
 
 .smartMEDs{
@@ -170,7 +179,6 @@ a:hover{
     width: 75%;
     height: 21vh;
     cursor: pointer;
-    border-radius: 30px;
     justify-self: start;
 }
 
@@ -191,10 +199,6 @@ a:hover{
     margin-right: -140px;
 }
 
-.projectPreview:hover{
-    width: 75.6%;
-}
-
 footer{
     display: grid;
     width: 100%;
@@ -208,12 +212,7 @@ footer p{
     margin-left: 10px;
 }
 
-.footerSection a{
-    font-family: 'Exo 2', sans-serif;
-}
-
 .footerSection a:hover{
-    color: whitesmoke;
     background-color: #121318;
 }
 
