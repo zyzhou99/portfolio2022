@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Dosis:wght@200;300;400;500;600&family=Exo+2:wght@100;200;300;400&family=Hammersmith+One&family=Julius+Sans+One&family=Nanum+Pen+Script&family=Outfit:wght@100;200;300;400;500;700&family=Play:wght@400;700&family=Silkscreen&family=Titillium+Web:wght@300;400;600&display=swap');
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Outfit', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Silkscreen', cursive;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Exo 2', sans-serif;
+*/
+
 body{
-    background: rgb(12, 12, 12);
+    background: rgb(255, 255, 255);
     background-size: cover;
     margin: 0;
 }
@@ -7,13 +22,13 @@ body{
 h1{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3em;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     margin-top: -0.1em;
     margin-bottom: -0.1em;
 }
 
 h2{
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-size: 1.55em;
     font-weight: 300;
     font-family: 'Play', sans-serif;
@@ -27,19 +42,60 @@ h3{
 }
 
 p{
-    color: whitesmoke;
-    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
 }
 
 a{
     text-decoration: none;
-    color: #f5f5f5;
+    color: #000000;
     padding: 5px;
     border-radius: 10px;
 }
 
 a:visited{
-    color: #f5f5f5;
+    color: #000000;
+}
+
+footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    background-color: #121318;
+    height: 10vh;
+}
+
+footer a, footer a:visited{
+    color: whitesmoke;
+}
+
+footer p{
+    font-size: 1em;
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+.footerSection a:hover{
+    background-color: #121318;
+}
+
+.email{
+    grid-column: 2;
+}
+
+.cellphone{
+    grid-column: 3;
+}
+
+.resume{
+    grid-column: 4;
+}
+
+.footerSection{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
 }
