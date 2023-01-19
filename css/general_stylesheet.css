@@ -139,6 +139,10 @@ a:visited{
     text-align: justify;
 }
 
+.introLink a{
+    font-style: italic;
+}
+
 .introLink a:hover{
     text-decoration: underline;
 }
