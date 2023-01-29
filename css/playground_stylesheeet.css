@@ -1,13 +1,7 @@
-body{
-    background-color: whitesmoke;
-}
-
-.SelfIntro{
+.otherProjects{
     width: 70%;
     margin: auto;
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
 }
-
-
