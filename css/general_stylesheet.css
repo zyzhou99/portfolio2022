@@ -178,6 +178,12 @@ a:visited{
     font-weight: 300;
 }
 
+.flexImg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
 .findingImage{
     margin-top: -18px;
 }
@@ -208,7 +214,7 @@ a:visited{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
-    row-gap: 50px;
+    row-gap: 40px;
     padding-top: 40px;
     padding-bottom: 50px;
     margin-top: -5px;
@@ -279,6 +285,20 @@ a:visited{
     justify-self: center;
     align-self: center;
 }
+
+.prototypeContainer2{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: -5px;
+}
+
+.prototypeContainer2 p{
+    text-align: justify;
+}
+
 
 .pillBoxContainer{
     width: 70%;
