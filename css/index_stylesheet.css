@@ -203,7 +203,7 @@ footer{
     display: grid;
     width: 100%;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    background-color: #121318;
+    background-color: #0c0c0c;
     height: 10vh;
 }
 
@@ -213,7 +213,7 @@ footer p{
 }
 
 .footerSection a:hover{
-    background-color: #121318;
+    background-color: #0c0c0c;
 }
 
 .email{

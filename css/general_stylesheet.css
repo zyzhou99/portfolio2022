@@ -329,7 +329,7 @@ a:visited{
 }
 
 footer{
-    background-color: #121318;
+    background-color: #0c0c0c;
     height: 10vh;
     align-items: center;
     margin-top: 50px;
@@ -363,6 +363,6 @@ footer p{
 }
 
 .footerSection a:hover{
-    background-color: #121318;
+    background-color: #0c0c0c;
 }
 

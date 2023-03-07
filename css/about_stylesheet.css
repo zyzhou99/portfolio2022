@@ -1,13 +1,35 @@
+nav{
+    background: #0c0c0c;
+}
+
 body{
-    background-color: whitesmoke;
+    background: #0c0c0c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .SelfIntro{
     width: 70%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 120px;
     display: flex;
     justify-content: space-between;
 }
 
+.aboutMeText{
+    padding-right: 100px;
+    text-align: justify;
+}
 
+.aboutMeText p{
+    color: whitesmoke;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex: 1;
+}
