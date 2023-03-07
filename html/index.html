@@ -53,11 +53,15 @@
                 <div class="neck2"></div>
             </figure>
 
+            <audio id="myAudio">
+                <source src="../audio/Ziyan Zhou.mp3" type="audio/mpeg">
+            </audio>
+
             <div class="introtext">
                 <p>Hi there, </p>
                 <div class="name">
                     <h1>I'm Ziyan Zhou</h1>
-                    <img src="../image/speaker2.png" alt="speaker icon" class="speaker">
+                    <img src="../image/speaker2.png" alt="speaker icon" class="speaker" onclick="playAudio()">
                 </div>
                 <h1 class="brief">
                     A <span>UI/UX Engineer</span>
@@ -66,6 +70,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() {
+            x.play();
+        }
+    </script>
 
     <script>
         document.querySelector('body').addEventListener('mousemove', eyesMove);
