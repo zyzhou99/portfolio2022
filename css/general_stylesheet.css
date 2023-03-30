@@ -162,7 +162,7 @@ a:visited{
     text-align: justify;
 }
 
-.problemList{
+.problemList, .ideaList, .changes{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
@@ -173,14 +173,98 @@ a:visited{
     width: 220px;
 }
 
+.iteration{
+    text-align: center;
+}
+
+.idea p{
+    text-align: center;
+    width: 300px;
+}
+
 .problem h3{
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
+    
+}
+
+.problem p{
+    text-align: left;
+}
+
+.iteration p{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.quoteGrid{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quoteGrid p{
+    font-size: 0.8em;
+    justify-self: center;
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.quote strong{
+    font-size: 1.1em;
+    color: #F86d07;
+}
+
+.quote1{
+    grid-column: 1;
+}
+
+.quote2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.quote3{
+    grid-column: 3;
+}
+
+.quote4{
+    grid-column: 4;
+}
+
+.quote12{
+    grid-column: 1 / span 2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.quote23{
+    grid-column: 2 / span 2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.quote34{
+    grid-column: 3 / span 2;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .flexImg{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.personas{
     margin-bottom: 40px;
 }
 
@@ -192,7 +276,6 @@ a:visited{
     width: 70%;
     margin: auto;
     text-align: center;
-    padding-bottom: 40px;
 }
 
 .process h2{
