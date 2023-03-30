@@ -197,6 +197,11 @@ a:visited{
     text-align: center;
 }
 
+.iteration img{
+    border: groove;
+    border-width: 1px;
+}
+
 .quoteGrid{
     width: 100%;
     margin: auto;
