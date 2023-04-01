@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index_stylesheet_copy.css">
+    <!-- <link rel="stylesheet" href="../css/index_stylesheet_white.css"> -->
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?">
+    <title>Ziyan Zhou Portfolio</title>
+</head>
+<body>
+
+    <section class="intro">
+        <nav>
+            <h2 class="work"><a href='#uxWorks' id="uxDesign">UX DESIGN ↓</a></h2>
+            <h2 class="playground"><a href="playground.html" id="otherWork">PLAYGROUND</a></h2>
+            <h2 class="about"><a href="about.html" id="aboutme">ABOUT ME</a></h2>
+        </nav>
+
+        <div class="first">
+            <figure class="profile">
+                <div class="outline"></div>
+                <div class="hair hairs"></div>
+                <div class="head"></div>
+                <div class="neck"></div>
+                <div class="bangsleft"></div>
+                <div class="bangsright"></div>
+                <div class="bangsmiddle"></div>
+                <div class="bangshide"></div>
+                <div class="shirt"></div>
+                <div class="earleft"></div>
+                <div class="earright"></div>
+                <div class="sideleft"></div>
+                <div class="sidelefthide"></div>
+                <div class="eyebrowsleft eye"></div>
+                <div class="browshideleft eye"></div>
+                <div class="eyebrowsright eye"></div>
+                <div class="browshideright eye"></div>
+                <div class="eyeleft eye" id="eye1"></div>
+                <div class="eyeright eye" id="eye2"></div>
+                <div class="eyehlleft eye" id="eyehl1"></div>
+                <div class="eyehlright eye" id="eyehl2"></div>
+                <div class="nose1 face"></div>
+                <div class="nose2"></div>
+                <div class="cheekleft face"></div> 
+                <div class="cheekright face"></div>
+                <div class="mouth1 face"></div>
+                <div class="mouth2 face"></div>
+                <div class="tongue1"></div>
+                <div class="tongue2"></div>
+                <div class="neck2"></div>
+            </figure>
+
+            <audio id="myAudio">
+                <source src="../audio/Ziyan Zhou.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="introtext">
+                <p>Hi there, </p>
+                <div class="name">
+                    <h1>I'm Ziyan Zhou</h1>
+                    <img src="../image/speaker2.png" alt="speaker icon" class="speaker" onclick="playAudio()">
+                </div>
+                <h1 class="brief">
+                    An <span>Experience Designer</span>
+                </h1>
+                <p class="brief2">I enjoy designing <span>accessible</span> and <span>delightful</span> experience<br>and I am interested in <span>Extended Reality</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() {
+            x.play();
+        }
+    </script>
+
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyesMove);
+        document.querySelector('body').addEventListener('mousemove', faceMove);
+        function eyesMove(){
+            var eyes=document.getElementsByClassName('eye');
+            var x = event.clientX * 100 / window.innerWidth / 18 + "%";
+            var y = event.clientY * 100 / window.innerHeight / 5 + "%";
+            for(var i=0; i<8; i++){
+                eyes[i].style.left = x;
+                eyes[i].style.top = y;
+                eyes[i].style.transform = "translate(-"+x+", "+y+")";
+            }
+        }
+
+        function faceMove(){
+            var faces=document.getElementsByClassName('face');
+            var x = event.clientX * 100 / window.innerWidth / 30 + "%";
+            var y = event.clientY * 100 / window.innerHeight / 10 + "%";
+            for(var i=0; i<8; i++){
+                faces[i].style.left = x;
+                faces[i].style.top = y;
+                faces[i].style.transform = "translate(-"+x+", "+y+")";
+            }
+        }
+
+        //document.querySelector('.profile').addEventListener('mouseover', smile);
+        //document.querySelector('.profile').addEventListener('mouseout', changeBack);
+        document.getElementById('aboutme').addEventListener('mouseover', smile);
+        document.getElementById('aboutme').addEventListener('mouseout', changeBack);
+        document.getElementById('uxDesign').addEventListener('mouseover', smile);
+        document.getElementById('uxDesign').addEventListener('mouseout', changeBack);
+        document.getElementById('otherWork').addEventListener('mouseover', smile);
+        document.getElementById('otherWork').addEventListener('mouseout', changeBack);
+        function smile(){
+            document.getElementById('eye1').classList.add('smileleft');
+            document.getElementById('eyehl1').classList.add('smilelefthide');
+            document.getElementById('eye2').classList.add('smileright');
+            document.getElementById('eyehl2').classList.add('smilerighthide');
+            document.querySelector('.nose1').style.marginTop = -46 + "px";
+        }
+
+        function changeBack(){
+            document.getElementById('eye1').classList.remove('smileleft');
+            document.getElementById('eyehl1').classList.remove('smilelefthide');
+            document.getElementById('eye2').classList.remove('smileright');
+            document.getElementById('eyehl2').classList.remove('smilerighthide');
+            document.querySelector('.nose1').style.marginTop = -6 + "px";
+        }
+
+    </script>
+
+
+    <section class="container" id="uxWorks">
+        <div class="smartMEDs projectPreview">
+            <a href="./smartmeds.html">
+                <img class="thumbnail" src="../image/smartmed cover2.jpg" alt="SmartMEDs Thumbnail" width="100%">
+            </a>
+            <div class="descriptionText">
+                <h3>SmartMEDs</h3>
+                <p>How can we help patients and caregivers better manage medication and side effects?</p>
+            </div>
+        </div>
+        
+        <div class="locoRoco projectPreview">
+            <a href="./locoroco.html">
+                <img class="thumbnail" src="../image/locoroco cover.jpg" alt="LocoRoco Project Thumbnail" width="100%">
+            </a>
+            <div class="descriptionText">
+                <h3>LocoRoco Vending Project</h3>
+                <p>How can street vendors create a mutual aid system?</p>
+            </div> 
+        </div>
+
+        <div hidden>
+            <div class="fantasyCity projectPreview">
+                <a href="./fantasy_city.html">
+                    <img class="thumbnail" src="../image/fatasy city cover.jpg" alt="Fantasy City Thumbnail" width="100%">
+                </a>
+                <div class="descriptionText">
+                    <h3>Fantasy City</h3>
+                    <p>How can augmented reality enhance people's experience of exploring a city?</p>
+                </div>
+            </div>
+
+            <div class="popMeal projectPreview">
+                <a href="./popmeal.html">
+                    <img class="thumbnail" src="../image/popmeal cover.jpg" alt="PoPMeaL Thumbnail" width="100%">
+                </a>
+                <div class="descriptionText">
+                    <h3>PoPMeaL</h3>
+                    <p>How can we reduce foodwaste from college dinning halls?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="email footerSection">
+                <img src="../image/emailicon2.png" alt="email icon" height="25px">
+                <p><a href="mailto: zhouzy@umich.edu">zhouzy@umich.edu</a></p>
+            </div>
+
+            <div class="cellphone footerSection">
+                <img src="../image/teleicon2.png" alt="cellphone icon" height="25px">
+                <p>+1 (315)-436-5520</p>
+            </div>
+
+            <div class="footerSection">
+                <img src="../image/linkedin2.png" alt="linkedin icon" height="22px">
+                <p><a href="https://www.linkedin.com/in/ziyan-zhou-a21396173/">LinkedIn</a></p>
+            </div>
+
+            <div class="resume footerSection">
+                <img src="../image/link2.png" alt="cellphone icon" height="25px">
+                <p><a href="https://drive.google.com/file/d/1l7Z0r8DjxmkngDJvn3V8ApI3-Mr6cSq3/view?usp=sharing">RESUME</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
